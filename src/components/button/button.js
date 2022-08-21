@@ -1,5 +1,5 @@
-import React from 'react';
-import './button.css';
+import React from "react";
+import "./button.css";
 
 export default function Button({ label }) {
   const [visible, setVisible] = React.useState(false);
@@ -9,7 +9,8 @@ export default function Button({ label }) {
         type="button"
         data-testid="button"
         className="button-style"
-        onClick={() => setVisible(true)}>
+        onClick={() => setVisible(true)}
+      >
         {label}
       </button>
       {!visible ? (

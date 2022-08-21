@@ -10,7 +10,7 @@ describe("Button", () => {
   });
 
   it("should render a button", () => {
-    expect(button).toBeTruthy();
+    expect(button).toBeTruthy(); //set toBeFalsy and failed
   });
 
   it("renders with label", () => {
@@ -40,7 +40,7 @@ describe("Button", () => {
   it("renders `you clicked me` when clicked", () => {
     fireEvent.click(button.queryByTestId("button"));
 
-    expect(button.queryByTestId("you-clicked-me")).toBeTruthy();
+    expect(button.queryByTestId("you-clicked-me")).toBeTruthy(); // tested with onClick set to false and failed
   });
 
   it("matches snapshot", () => {
